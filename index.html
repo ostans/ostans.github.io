@@ -6,14 +6,13 @@
     <title>اوستنس — نمونه‌کارها و رزومه</title>
     <meta name="description" content="نمونه‌کارها و معرفی اوستنس — توسعه‌دهنده پایتون. پروژه‌ها و راه‌های تماس." />
 
-    <!-- فونت فارسی و آیکون‌های ساده -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
       :root{
-        --bg-1:#0b1220; --bg-2:#071025; --card:#0f1724;
+        --bg-1:#071025; --bg-2:#07192b; --card:#0f1724;
         --text:#e6eef6; --muted:#9aa4b2; --accent:#60a5fa; --accent-2:#7dd3fc;
         --glass: rgba(255,255,255,0.03); --radius:14px;
       }
@@ -30,13 +29,11 @@
 
       .main-grid{display:grid;grid-template-columns:320px 1fr;gap:22px;align-items:start}
 
-      /* کارت‌ها */
-      .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.03);box-shadow:0 10px 30px rgba(0,0,0,0.45)}
+      .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.03);box-shadow:0 10px 30px rgba(2,8,20,0.6)}
 
-      /* سایدبار */
       .profile{display:flex;flex-direction:column;align-items:center;text-align:center}
-      .avatar{width:110px;height:110px;border-radius:18px;background:linear-gradient(135deg,rgba(96,165,250,0.12),rgba(125,211,252,0.06));display:grid;place-items:center;font-weight:800;font-size:30px;color:var(--accent);margin-bottom:12px;border:1px solid rgba(125,211,252,0.08)}
-      .name{font-size:1.4rem;margin:0}
+      .avatar{width:110px;height:110px;border-radius:18px;background:linear-gradient(135deg,rgba(96,165,250,0.12),rgba(125,211,252,0.06));display:grid;place-items:center;font-weight:800;font-size:30px;color:var(--text)}
+      .name{font-size:1.4rem;margin:10px 0 0 0}
       .role{color:var(--muted);margin-top:6px}
       .location{color:var(--muted);margin-top:6px}
       .links{margin-top:14px;display:flex;flex-direction:column;gap:8px;width:100%}
@@ -44,18 +41,15 @@
       .download-cv{margin-top:12px}
       .download-cv a{display:inline-block;padding:10px 12px;border-radius:10px;background:var(--accent);color:#021026;text-decoration:none;font-weight:700}
 
-      /* مهارت‌ها */
       .skills-list{display:grid;gap:10px}
       .skill{display:flex;flex-direction:column;gap:6px}
       .skill .bar{height:10px;background:rgba(255,255,255,0.04);border-radius:999px;overflow:hidden}
       .skill .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));border-radius:999px}
       .skill label{display:flex;justify-content:space-between;color:var(--muted);font-weight:600}
 
-      /* محتوا */
       .content .section{margin-bottom:14px}
       .about p{color:var(--muted);line-height:1.8}
 
-      /* پروژه‌ها */
       .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
       .project{padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.02);transition:transform .18s ease,box-shadow .18s ease}
       .project:hover{transform:translateY(-6px);box-shadow:0 18px 50px rgba(7,10,20,0.6)}
@@ -63,13 +57,11 @@
       .project-meta{color:var(--muted);font-size:0.9rem;margin-bottom:8px}
       .project a{color:var(--accent);font-weight:700;text-decoration:none}
 
-      /* تماس */
       .contact-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
       .contact a{color:var(--accent);text-decoration:none;font-weight:700}
 
       footer{color:var(--muted);text-align:center;margin-top:18px}
 
-      /* ریسپانسیو */
       @media (max-width:940px){.main-grid{grid-template-columns:1fr}.logo{width:48px;height:48px}.avatar{width:90px;height:90px}}
       @media (max-width:520px){.wrap{padding:14px}.topbar{flex-direction:column;align-items:flex-start;gap:8px}}
     </style>
@@ -81,7 +73,7 @@
           <div class="logo">OS</div>
           <div>
             <h1>اوستنس — توسعه‌دهنده پایتون</h1>
-            <div class="tagline">نمونه‌کارها، مهارت‌ها و راه‌های تماس</div>
+            <div class="tagline">نمونه‌کارها�� مهارت‌ها و راه‌های تماس</div>
           </div>
         </div>
         <nav style="display:flex;gap:12px;align-items:center">
@@ -101,7 +93,6 @@
 
             <div class="links">
               <a href="https://github.com/ostans" target="_blank" rel="noreferrer">گیت‌هاب</a>
-              <!-- افزونه: لینکدین یا وبسایت -->
             </div>
 
             <div class="download-cv">
@@ -138,27 +129,28 @@
           <section id="about" class="card about section">
             <h3 style="margin-top:0">درباره من</h3>
             <p>
-              من در حال یادگیری برنامه‌نویسی و ساخت پروژه‌های کوچکِ کاربردی هستم تا مهارت‌های خود را در پایتون، کار با خط فرمان و محیط‌های لینوکسی تقویت کنم. علاقه‌مند به نوشتن کد تمیز، حل مسئله، و انجام پروژه‌های عملی کوچک هستم.
+              من در حال یادگیری برنامه‌نویسی و ساخت پروژه‌های کوچکِ کاربردی هستم تا مهارت‌های خود را در پایتون، کار با Git و توسعهٔ وب تقویت کنم. تمرکز من روی پروژه‌های آموزشی و ابزارهای خط فرمان است که هم به یادگیری خودم کمک می‌کند و هم می‌تواند برای دیگران مفید باشد.
             </p>
             <p style="margin-top:10px;color:var(--muted)">
-              این صفحه نمایانگر رزومهٔ زنده من است — پروژه‌ها، مهارت‌ها و راه‌های تماس را به‌روز نگه می‌دارم. اگر پروژه‌ای کوچک یا فرصتی مناسب داری، خوشحال می‌شوم صحبت کنیم.
+              این صفحه نمایانگر رزومهٔ زندهٔ من است — پروژه‌ها، مهارت‌ها و راه‌های تماس را به‌روز نگه می‌دارم. اگر مایل به همکاری یا سوالی بودی از طریق ایمیل تماس بگیر.
             </p>
           </section>
 
           <section id="projects" class="card section">
             <h3 style="margin-top:0">پروژه‌ها</h3>
             <div class="projects-grid" style="margin-top:12px">
+
               <article class="project">
                 <h4>password_tools</h4>
                 <div class="project-meta">Python · CLI</div>
-                <p style="color:var(--muted)">مجموعه‌ای از ابزارهای خط فرمان برای کار با رمزعبورها و تمرین ورود اطلاعات و پردازش رشته‌ها.</p>
+                <p style="color:var(--muted)">مجموعه‌ای از ابزارهای خط فرمان برای مدیریت و تست رمزعبورها، تمرین ورود و تولید رمز.</p>
                 <a href="https://github.com/ostans/password_tools" target="_blank" rel="noreferrer">نمایش در GitHub →</a>
               </article>
 
               <article class="project">
                 <h4>mini_store_management</h4>
                 <div class="project-meta">Python · مدیریت فروشگاه</div>
-                <p style="color:var(--muted)">پروژه‌ای تمرینی برای مدیریت آیتم‌ها، فاکتورها و عملیات پایهٔ فروش.</p>
+                <p style="color:var(--muted)">پروژهٔ تمرینی برای مدیریت آیتم‌ها، فاکتورها و عملیات پایهٔ فروش.</p>
                 <a href="https://github.com/ostans/mini_store_management" target="_blank" rel="noreferrer">نمایش در GitHub →</a>
               </article>
 
@@ -169,16 +161,37 @@
                 <a href="https://github.com/ostans/book_buddy" target="_blank" rel="noreferrer">نمایش در GitHub →</a>
               </article>
 
+              <article class="project">
+                <h4>event-management-platform</h4>
+                <div class="project-meta">Python · وب / پلتفرم</div>
+                <p style="color:var(--muted)">پروژه‌ای برای مدیریت رویدادها، ثبت‌نام و مدیریت شرکت‌کننده‌ها (در حال توسعه).</p>
+                <a href="https://github.com/ostans/event-management-platform" target="_blank" rel="noreferrer">نمایش در GitHub →</a>
+              </article>
+
+              <article class="project">
+                <h4>restaurant_project</h4>
+                <div class="project-meta">Python · مدیریت رستوران</div>
+                <p style="color:var(--muted)">سامانه‌ای نمونه برای مدیریت منو، سفارشات و مدیریت سادهٔ رستوران.</p>
+                <a href="https://github.com/ostans/restaurant_project" target="_blank" rel="noreferrer">نمایش در GitHub →</a>
+              </article>
+
+              <article class="project">
+                <h4>ShopNest</h4>
+                <div class="project-meta">Front-end · CSS</div>
+                <p style="color:var(--muted)">قالب فروشگاهی و نمونهٔ طراحی رابط کاربری با CSS و تمرکز روی سبک و واکنش‌گرایی.</p>
+                <a href="https://github.com/ostans/ShopNest" target="_blank" rel="noreferrer">نمایش در GitHub →</a>
+              </article>
+
             </div>
 
             <div style="margin-top:14px;color:var(--muted);font-size:0.95rem">
-              برای افزودن پروژه‌های بیشتر یا مرتب‌سازی آنها (ترتیب، توضیحات، تگ‌ها)، بگو تا من انجام دهم.
+              برای افزودن توضیح بیشتر، تصاویری از پروژه یا مرتب‌سازی ترتیب آنها بگو تا من انجام دهم.
             </div>
           </section>
 
           <section id="contact" class="card section">
             <h3 style="margin-top:0">تماس</h3>
-            <p style="color:var(--muted)">بهترین راه تماس ایمیل است. برای همکاری‌های کوچک، یادگیری مشترک و فرصت‌های پروژه‌ای پیام بدهید.</p>
+            <p style="color:var(--muted)">برای همکاری‌های کوچک، یادگیری مشترک و فرصت‌های پروژه‌ای از طریق ایمیل تماس بگیر.</p>
             <div class="contact-row" style="margin-top:8px">
               <div style="min-width:220px">
                 <strong>ایمیل</strong>
@@ -199,7 +212,6 @@
     </div>
 
     <script>
-      // سال جاری
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </body>
